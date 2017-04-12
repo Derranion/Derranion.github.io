@@ -1,0 +1,248 @@
+@font-face {
+    font-family: Archangelsk;
+    src: url(../fonts/Archangelsk.ttf);
+}
+@font-face{
+    font-family: Pepsi;
+    src: url(../fonts/Pepsi.ttf);
+}
+
+body {
+    font-family: Pepsi, Archangelsk, Impact;
+    background-image: url(../images/background.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+p {
+    color: cyan;
+    /*border-radius: 10px;*/
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#tetris {
+    margin: 1em auto;
+    padding: 1em;
+    background-color: transparent;
+    display: flex;
+}
+
+#canvas {
+    display: inline-block;
+    vertical-align: top;
+    background: url(../images/background.png) center no-repeat;
+    background-size: cover;
+    border: 2px solid cyan;
+    order: 1;
+}
+
+#leftBlock {
+    order: 0;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    order: 2;
+}
+
+#menu p {
+    margin: 0.5em 1em;
+    text-align: center;
+}
+
+#menu p:last-child {
+    margin-bottom: auto;
+}
+
+#menu p:nth-child(2) {
+    margin-bottom: auto;
+}
+
+#menu p a {
+    text-decoration: none;
+    color: cyan;
+}
+
+#upcoming {
+    display: block;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+#score {
+    color: magenta;
+    vertical-align: middle;
+}
+
+#rows {
+    color: blue;
+    vertical-align: middle;
+}
+
+#start {
+    margin-bottom: auto !important;
+}
+
+@media screen and (min-width: 0px) and (min-height: 0px) {
+    #tetris {
+        font-size: 0.75em;
+        width: 350px;
+    }
+
+    #menu,
+    #leftBlock {
+        width: 100px;
+        height: 200px;
+    }
+
+    #upcoming {
+        width: 50px;
+        height: 50px;
+    }
+
+    #canvas {
+        width: 100px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 400px) and (min-height: 400px) {
+    #tetris {
+        font-size: 1.00em;
+        width: 500px;
+    }
+
+    #menu,
+    #leftBlock {
+        width: 150px;
+        height: 300px;
+    }
+
+    #upcoming {
+        width: 75px;
+        height: 75px;
+    }
+
+    #canvas {
+        width: 150px;
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 500px) and (min-height: 500px) {
+    #tetris {
+        font-size: 1.25em;
+        width: 650px;
+    }
+
+    #menu,
+    #leftBlock {
+        width: 200px;
+        height: 400px;
+    }
+
+    #upcoming {
+        width: 100px;
+        height: 100px;
+    }
+
+    #canvas {
+        width: 200px;
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 600px) and (min-height: 600px) {
+    #tetris {
+        font-size: 1.50em;
+        width: 900px;
+    }
+
+    #menu,
+    #leftBlock {
+        width: 250px;
+        height: 500px;
+    }
+
+    #upcoming {
+        width: 125px;
+        height: 125px;
+    }
+
+    #canvas {
+        width: 250px;
+        height: 500px;
+    }
+}
+
+@media screen and (min-width: 700px) and (min-height: 700px) {
+    #tetris {
+        font-size: 1.75em;
+        width: 950px;
+    }
+
+    #menu,
+    #leftBlock {
+        width: 300px;
+        height: 600px;
+    }
+
+    #upcoming {
+        width: 150px;
+        height: 150px;
+    }
+
+    #canvas {
+        width: 300px;
+        height: 600px;
+    }
+}
+
+@media screen and (min-width: 800px) and (min-height: 800px) {
+    #tetris {
+        font-size: 2.00em;
+        width: 1100px;
+    }
+
+    #menu,
+    #leftBlock {
+        width: 350px;
+        height: 700px;
+    }
+
+    #upcoming {
+        width: 175px;
+        height: 175px;
+    }
+
+    #canvas {
+        width: 350px;
+        height: 700px;
+    }
+}
+
+@media screen and (min-width: 900px) and (min-height: 900px) {
+    #tetris {
+        font-size: 2.25em;
+        width: 1250px;
+    }
+
+    #menu,
+    #leftBlock {
+        width: 400px;
+        height: 800px;
+    }
+
+    #upcoming {
+        width: 200px;
+        height: 200px;
+    }
+
+    #canvas {
+        width: 400px;
+        height: 800px;
+    }
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tetris Game</title>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+
+<body>
+
+  <div id="tetris">
+    <div id="leftBlock"></div>
+    <div id="menu">
+      <p id="start"><a href="javascript:gameLogic.play();">Press space to play.</a></p>
+      <p><canvas id="upcoming"></canvas></p>
+      <p>score &nbsp;&nbsp;&nbsp;<span id="score">0</span></p>
+      <p>level &nbsp;&nbsp;&nbsp;<span id="rows">0</span></p>
+    </div>
+    <canvas id="canvas">
+    </canvas>
+  </div>
+
+  <script src="src/tetris.js"></script>
+
+</body>
+</html>
